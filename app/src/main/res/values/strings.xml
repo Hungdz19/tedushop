@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DemoSDK3</string>
+    facebook_app _id
+    fb_login_protocol_scheme
+    <!--key google and appsflyer-->
+    <string name="google_app_id" translatable="false">1:153296742767:android:1b951601ddcc232a66a09a</string>
+    <string name="appsflyer_app_id" translatable="false">8hbzWNwSSgBknnJs5jRKdM</string>
+    <string name="facebook_app_id" translatable="false">627276421798241</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb627276421798241</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

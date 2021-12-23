@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layoutParent" >
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="..."
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lv1"
+        style="@style/listViewNormal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv" />
+
+    <Button
+        android:id="@+id/btReload"
+        style="@style/buttonWhite"
+        android:layout_centerInParent="true"
+        android:text="Error! Touch to reload!"
+        android:visibility="gone" />
+
+</RelativeLayout>

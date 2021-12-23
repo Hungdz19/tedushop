@@ -1,0 +1,7 @@
+{
+    "app_id": "b08e024fff62ac3a6a6b2a406eff7f42",
+    "app_id_facebook":"627276421798241",
+    "secret_key":"c29cb60846ace28e337d97d534a5b2af",
+    "client_name" : "G12",
+    "client_code" : "G12"
+}

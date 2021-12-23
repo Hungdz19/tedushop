@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<!--    style="@style/layoutParent"-->
+
+
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="VSDKGame  Demo"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                style="@style/viewGone"
+                android:layout_height="5dp" />
+
+            <RelativeLayout style="@style/layoutMatchWrap">
+
+                <ImageView
+                    android:id="@+id/userAvatar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/marginNormal"
+                    android:src="@drawable/avatar_default" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/userAvatar"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/userName"
+                        style="@style/textViewSmall"
+                        android:text="..." />
+
+                    <TextView
+                        android:id="@+id/userId"
+                        style="@style/textViewSmall"
+                        android:text="..." />
+
+                    <TextView
+                        android:id="@+id/userCoin"
+                        style="@style/textViewSmall"
+                        android:text="Coin: ..." />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btLogin"
+                style="@style/buttonWhite"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_button_white_gray"
+                android:text="Login"
+                android:textColor="#ED0956"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/btLogout"
+                style="@style/buttonWhite"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_button_white_gray"
+                android:text="Logout"
+                android:textColor="#555"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:visibility="gone"
+
+           />
+
+            <Button
+                android:id="@+id/btPayment"
+                style="@style/buttonWhite"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_button_white_gray"
+                android:text="Payment"
+                android:textColor="#555"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:visibility="gone"
+              />
+
+            <Button
+                android:id="@+id/btRotateScreen"
+                style="@style/buttonWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_button_white_gray"
+                android:text="Rotate screen"
+                android:textColor="#F10606"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/btface"
+                style="@style/buttonWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_button_white_gray"
+                android:text="Facebook"
+                android:textColor="#F10606"
+                android:textSize="20sp"
+             />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
